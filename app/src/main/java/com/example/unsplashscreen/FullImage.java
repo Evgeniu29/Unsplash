@@ -68,7 +68,7 @@ public class FullImage extends AppCompatActivity {
             @Override
             public void onResourceReady(Bitmap bitmap, Transition<? super Bitmap> transition) {
                 try {
-                    File mydir = new File(Environment.getExternalStorageDirectory() + "/11zon");
+                    File mydir = new File(Environment.getExternalStorageDirectory() + "/images");
                     if (!mydir.exists()) {
                         mydir.mkdirs();
                     }
