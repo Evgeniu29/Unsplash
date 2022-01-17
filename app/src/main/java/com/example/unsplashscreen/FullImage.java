@@ -10,6 +10,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -82,7 +83,14 @@ public class FullImage extends AppCompatActivity {
                 } catch(IOException e) {
                     e.printStackTrace();
                 }
-                Toast.makeText(getApplicationContext(), "Image Saved", Toast.LENGTH_LONG).show();
+
+               Toast toast =   Toast.makeText(getApplicationContext(),
+                       "Saved",
+                       Toast.LENGTH_SHORT);
+
+                toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL, 0, 0);
+
+                toast.show();
             }
             @Override
             public void onLoadCleared(Drawable placeholder) {
