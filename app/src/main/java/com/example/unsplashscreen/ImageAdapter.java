@@ -47,7 +47,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
            @Override
            public void onClick(View view) {
                Intent intent = new Intent(context,  FullImage.class);
-               intent.putExtra("image", list.get(position).getUrls().getRegular().toString());
+               intent.putExtra("image", list.get(position).getUrls().getRegular());
                context.startActivity(intent);
 
            }

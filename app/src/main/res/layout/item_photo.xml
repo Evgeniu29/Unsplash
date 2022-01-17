@@ -8,15 +8,15 @@
         android:layout_height="wrap_content">
 
     <ImageView
-            android:contentDescription="@string/photo"
-            tools:src="@mipmap/ic_launcher"
-            android:id="@+id/item_photo_iv"
-            android:scaleType="centerCrop"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_width="0dp"
-            android:adjustViewBounds="true"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/item_photo_iv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/photo"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@mipmap/ic_launcher" />
 </androidx.constraintlayout.widget.ConstraintLayout>
